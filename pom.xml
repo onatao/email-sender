@@ -15,13 +15,18 @@
 	<description>Send emails using Amazon SES.</description>
 	<properties>
 		<java.version>17</java.version>
+		<aws.ses.version>1.12.560</aws.ses.version>
 	</properties>
 	<dependencies>
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk-ses</artifactId>
+			<version>${aws.ses.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
